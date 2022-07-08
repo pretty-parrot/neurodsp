@@ -26,6 +26,7 @@ def test_check_data_folder():
 
 def test_check_data_file():
 
+    assert os.path.isdir(TEST_FOLDER)
     filename = 'sample_data_1.npy'
 
     check_data_file(filename, TEST_FOLDER)
